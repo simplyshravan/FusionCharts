@@ -1,8 +1,15 @@
 # Testrouting
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+You must install node and angular. 
+Check version with below command.
+`node -v`
+`ng -v`
+`npm -v`
 
 ## Development server
+
+Run `npm install --all` first to download all libraries.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
