@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+<!-- <div class="homepage">
+  <input type="text" #newHero minlength=3 (keyup.enter)="addHero(newHero.value); newHero.value=''" (blur)="addHero(newHero.value); newHero.value=''"
+   placeholder="Fund Class Acronym, Fund Long Name, Benchmark Mias Id, Benchmark Long Name...">  
+  <button (click)="addHero(newHero.Value)">Add</button>
+  <ul><li *ngFor="let hero of heroes">{{hero}}</li></ul>
+  <select class="mdb-select colorful-select dropdown-primary" searchable="Search here..">
+      <option value="hero" *ngFor="let hero of heroes" value="hero">{{hero}}</option>
+  </select>
+</div>
+<div class="firstcomponent">
+  <input #searchfund type="text" (keyup)="searchfunds(searchfund.value)">
+  <div class="dropdown-shadow" *ngIf="show">
+     <li *ngFor="let fund of fundlist">
+         <p>{{fund}}</p>
+     </li>
+    </div>
+ <!-- <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" (click)="searchclick(searchfund.value)"></span> 
+  
+
+</div> -->
+<!---<div class="dropdown-shadow">
+    <h1>{{errorMsg}}</h1>
+  <li *ngFor="let data of myjson">
+    <p>{{data.perfhEntityId}}</p>
+    <p>{{data.entityEomsId}}</p>
+    <p>{{data.entityMiasId}}</p>
+    <p>{{data.entityLegalName}}</p>
+    <p>{{data.entityBasecurrency}}</p>
+    <p>{{data.entityProductType}}</p>
+    <p>{{data.entityIsinCd}}</p>
+    <p>{{data.perfStartDate}}</p>
+    <p>{{data.ipPrefPerformanceReporting}}</p>
+    <p>{{data.fundClassAcronym}}</p>
+    <p>{{data.managerAid}}</p>
+    <p>{{data.managerLastName}}</p>
+    <p>{{data.managerFirstName}}</p>
+    <p>{{data.managerMiddleName}}</p>
+    <p>{{data.managerRole}}</p>
+    <p>{{data.managerStartDate}}</p>
+    <p>{{data.managerEndDate}}</p>
+  </li>
+ </div>-->
+
+<!-- <ag-grid-angular #agGrid style="width:90%;height: 250px;" class="ag-theme-balham"
+[columnDefs]="columnDefs" [rowGroupPanelShow]="always" [enableFilter]="true" [defaultColDef]="defaultColDef" 
+[enableColResize]="true" [animateRows]="true" [groupDefaultExpanded]="-1" [columnTypes]="columnTypes"
+[pagination]="true" [rowDragManaged]="true"
+[enableSorting]="true" (gridReady)="OnGridReady($event)">
+</ag-grid-angular> -->
+  <div >
+                        <fusioncharts   type="mscolumn2d" width='1000' height='600' dataFormat= 'json'  [dataSource]="dataSource">
+                                </fusioncharts>
+  </div> 
